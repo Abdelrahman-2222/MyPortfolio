@@ -43,6 +43,11 @@ function pageTransitions() {
     themeBtn[0].addEventListener('click',() =>{
     let element = document.body;
     element.classList.toggle('light-mode');
+
+    // const dowcv = document.querySelectorAll('.btn-text');
+    // dowcv[0].addEventListener('click',() =>{
+    // let element2 = document.body;
+    // element2.classList.toggle('light-mode');
     
 })
 }
