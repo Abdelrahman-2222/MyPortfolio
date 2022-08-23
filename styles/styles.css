@@ -545,6 +545,9 @@ section {
   margin: 0.3rem 0;
   padding: 0;
 }
+.contact-content-con .left-contact .contact-info .contact-item p span {
+  margin-left: 19px;
+}
 .contact-content-con .left-contact .contact-info .contact-item .icon {
   display: grid;
   grid-template-columns: 40px 1fr;
