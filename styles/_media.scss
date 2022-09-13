@@ -19,8 +19,133 @@
   }
 }
 
+
 @media (max-width: 768px) {
-  /* Start Buttons */
+  .left-header {
+    display: none;
+  }
+
+  .controls{
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control{
+        margin: 1rem .3rem;
+    }
+}
+
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .right-header {
+
+    margin-top: 14%;
+
+    p {
+      font-size: 20px;
+      width: 100%;
+    }
+
+    padding-left: 10%;
+
+    width: 100%;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+
+  /* Second Page */
+
+  .left-about {
+    margin-top: 45px;
+  }
+
+  .stat-title {
+    margin-top: 0;
+  }
+  .timeline {
+    .timeline-item {
+      padding-left: 0;
+      .t1-icon{
+        display: none;
+      }
+
+      .t1-duration {
+        padding: 0;
+        margin: 0;
+      }
+    }  
+  }
+  .container{
+    .right-about-r,
+    .right-about-l{
+      .about-item{
+        width: 70%;
+        transform: translateX(25%);
+        animation: fadeInRight 3s ease-in-out -1s 2;
+        
+        .about-text{
+          .large-text {
+            font-size: 2rem;
+          }
+          .small-text{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    // .right-about-l {
+    //   .about-item{
+
+    //   }
+    // }
+  }
+
+  .main-title{
+    h2{
+      margin-top: 40px;
+    }
+    
+  }
+
+  form {
+    margin-left: -55px;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(25%);
+    }
+  }
+}
+
+// @media (max-width: 992px) 
+// {
+//   .left-about {
+//     margin-left: -50%;
+//     margin-top: 25%;
+//   }
+// }
+
+/*
+
+@media (max-width: 768px) {
+  /* Start Buttons *
   .controls {
     top: auto;
     bottom: 0;
@@ -54,9 +179,9 @@
     // transform: translate(-244px, -47px);
   }
 
-  /* End Buttons */
+  /* End Buttons *
 
-  /* Start Section 1 (Header) */
+  /* Start Section 1 (Header) *
   .header-content {
     .left-header {
       display: none !important;
@@ -79,7 +204,7 @@
     }
   }
 
-  /* End Section 1 (Header) */
+  /* End Section 1 (Header) *
   .active{
     width:100%;
     max-width: 367px;
@@ -229,7 +354,7 @@
   }
 
   /* Start Section 2 (About) */
-  /*
+/*
   .main-title {
     h2 {
       font-size: 28px;
@@ -355,9 +480,9 @@
   }
   */
 
-  /* End Section 2 (About) */
+/* End Section 2 (About) *
 
-  /* Start Section 3 (Portfolios) */
+  /* Start Section 3 (Portfolios) *
 
   .port-text {
     padding: 1rem 0;
@@ -396,9 +521,9 @@
     }
   }
 
-  /* End Section 3 (Portfolios) */
+  /* End Section 3 (Portfolios) *
 
-  /* Start Section 4 (Contact) */
+  /* Start Section 4 (Contact) *
 
   .contact-content-con {
     .left-contact {
